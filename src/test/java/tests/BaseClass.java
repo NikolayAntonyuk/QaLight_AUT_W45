@@ -14,7 +14,15 @@ public class BaseClass {
         System.out.println("Environments:");
         if (browserName.equals("Chrome")) {
             System.out.println("Browser name: " + browserName);
+        } else {
+            System.out.println("Browser name: " + browserName + " not found");
         }
+        if (country.equals("SE")) {
+            System.out.println("Country: " + country);
+        } else {
+            System.out.println("Country: " + country + " not found");
+        }
+        System.out.println("Before method");
     }
 
     @AfterMethod
