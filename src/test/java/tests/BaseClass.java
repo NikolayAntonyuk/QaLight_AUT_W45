@@ -12,12 +12,12 @@ public class BaseClass {
     @BeforeMethod
     public void prepareProject(@Optional String browserName, @Optional String country) {
         System.out.println("Environments:");
-        if (browserName.equals("Chrome")) {
+        if (browserName != null && browserName.equals("Chrome")) {
             System.out.println("Browser name: " + browserName);
         } else {
             System.out.println("Browser name: " + browserName + " not found");
         }
-        if (country.equals("SE")) {
+        if (country != null && country.equals("SE")) {
             System.out.println("Country: " + country);
         } else {
             System.out.println("Country: " + country + " not found");
