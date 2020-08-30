@@ -1,10 +1,13 @@
 package tests;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import tests.listeners.CustomListener;
 
 import static tests.logger.CustomLogger.logger;
 
+@Listeners(CustomListener.class)
 public class CalculatorTests extends BaseClass {
 
     @Test(groups = "test1", priority = 1)

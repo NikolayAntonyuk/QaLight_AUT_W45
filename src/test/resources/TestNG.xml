@@ -1,5 +1,8 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="Project Test1" verbose="1">
+<!--    <listeners>-->
+<!--        <listener class-name="tests.listeners.CustomListener"/>-->
+<!--    </listeners>-->
     <test name="tests.Calculator">
         <parameter name="browserName" value="Chrome"/>
         <parameter name="country" value="SE"/>
