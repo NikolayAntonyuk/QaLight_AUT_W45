@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class CalculatorTests extends BaseClass {
 
-    @Test(groups = "test1", priority = 1)
+    @Test(groups = "test1", priority = 7)
     public void test1() {
         int actualResult = calculator.sum(2, 2);
         int expectedResult = 4;
