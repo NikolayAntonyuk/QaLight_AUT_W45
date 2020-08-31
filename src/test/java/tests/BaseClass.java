@@ -1,6 +1,5 @@
 package tests;
 
-import nastya.homework2.PrepareTestData;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
@@ -8,14 +7,6 @@ import org.testng.annotations.Parameters;
 
 public class BaseClass {
     Calculator calculator = new Calculator();
-    public PrepareTestData prepareTestData = new PrepareTestData();
-
-
-    @BeforeMethod
-    public void setPrepareTestData() {
-        prepareTestData.fillArrayInt();
-        prepareTestData.fillArrayString();
-    }
 
     @Parameters({"browserName", "country"})
     @BeforeMethod

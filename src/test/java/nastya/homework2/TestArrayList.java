@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import tests.BaseClass;
 
-public class TestArrayList extends BaseClass {
+public class TestArrayList extends BaseClass1 {
     @Test
     public void verifyArrayList() {
         for (int a = 0; a < prepareTestData.getArrayList2().size(); a++) {
