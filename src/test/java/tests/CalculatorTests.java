@@ -10,13 +10,9 @@ import static tests.logger.CustomLogger.logger;
 @Listeners(CustomListener.class)
 public class CalculatorTests extends BaseClass {
 
-<<<<<<< HEAD
-    @Test(groups = "test1", priority = 7)
-    public void test1() {
-=======
     @Test(groups = "test1", priority = 1)
     public void test1(String msg) {
->>>>>>> 4b835bc40088b4958feecba1f43803bd6858dc7c
+
         int actualResult = calculator.sum(2, 2);
         int expectedResult = 4;
         Assert.assertEquals(expectedResult, actualResult);
