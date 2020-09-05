@@ -8,7 +8,7 @@ public class HomeTasks {
             for (int i = 0; i < 5; i++) {
                 if (i == 0) {
                     c = a / b;
-                    System.out.println(i + ". "+ a + "/" + b + "=" + c);
+                    System.out.println(i + ". " + a + "/" + b + "=" + c);
 
                 } else {
                     int r = c / b;
@@ -18,7 +18,8 @@ public class HomeTasks {
             }
 
         } else {
-            System.out.println("Результат умножения параметров друг на друга НЕ равняется 100, цикл запущен не будет");
+            System.out.println("The result of multiplying the parameters by each other is NOT 100, the cycle will not" +
+                    " be started");
         }
     }
 }

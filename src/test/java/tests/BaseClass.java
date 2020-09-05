@@ -1,12 +1,16 @@
 package tests;
 
+import lera.PrepareTestData;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
+import java.util.ArrayList;
+
 public class BaseClass {
     Calculator calculator = new Calculator();
+    PrepareTestData prepareTestData = new PrepareTestData();
 
     @Parameters({"browserName", "country"})
     @BeforeMethod
@@ -23,6 +27,7 @@ public class BaseClass {
             System.out.println("Country: " + country + " not found");
         }
         System.out.println("Before method");
+        prepareTestData.createListWithStringItem(prepareTestData.addItemsInList());
     }
 
     @AfterMethod
