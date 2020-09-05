@@ -3,7 +3,7 @@
 <!--    <listeners>-->
 <!--        <listener class-name="tests.listeners.CustomListener"/>-->
 <!--    </listeners>-->
-    <test name="tests.Calculator">
+    <test name="tests.unit_tests.Calculator">
         <parameter name="browserName" value="Chrome"/>
         <parameter name="country" value="SE"/>
         <packages>
@@ -16,7 +16,7 @@
             <package name="sasha"/>
         </packages>
         <classes>
-            <class name="tests.CalculatorTests">
+            <class name="tests.unit_tests.CalculatorTests">
                 <methods>
                     <exclude name="test1"/>
                 </methods>
@@ -36,7 +36,7 @@
             <package name="sasha"/>
         </packages>
         <classes>
-            <class name="tests.CalculatorTests">
+            <class name="tests.unit_tests.CalculatorTests">
                 <methods>
                     <exclude name="test1"/>
                 </methods>
