@@ -1,4 +1,4 @@
-package tests;
+package tests.unit_tests;
 
 public class Calculator {
 
